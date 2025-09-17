@@ -1,11 +1,3 @@
-
-# how to run
-```bash
-docker compose build
-docker compose up
-```
-
-
 # RealtimeSTT
 [![PyPI](https://img.shields.io/pypi/v/RealtimeSTT)](https://pypi.org/project/RealtimeSTT/)
 [![Downloads](https://static.pepy.tech/badge/RealtimeSTT)](https://www.pepy.tech/projects/realtimestt)

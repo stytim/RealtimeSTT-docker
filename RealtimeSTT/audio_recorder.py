@@ -40,7 +40,7 @@ import faster_whisper
 import openwakeword
 import collections
 import numpy as np
-import pvporcupine
+#import pvporcupine
 import traceback
 import threading
 import webrtcvad

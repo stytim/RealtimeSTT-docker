@@ -22,13 +22,20 @@ services:
         reservations:
           devices:
           - capabilities: ["gpu"]
-#  nginx:
-#    image: nginx:latest
-#    container_name: nginx_web
-#    ports:
-#      - "8081:80"
-#    volumes:
-#      - ./example_browserclient:/usr/share/nginx/html
+    ipc: host
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      stack: 67108864
+
+  #nginx:
+  #  image: nginx:latest
+  #  container_name: nginx_web
+  #  ports:
+  #    - "8081:80"
+  #  volumes:
+  #    - ./example_browserclient:/usr/share/nginx/html
 
 volumes:
   cache:
